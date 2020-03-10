@@ -1,0 +1,12 @@
+{
+  "name": "verify-docker-action",
+  "license": "MIT",
+  "repository": "https://github.com/christopher-dG/verify-docker-action",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/exec": "^1.0.3"
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}

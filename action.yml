@@ -1,0 +1,16 @@
+name: Verify Docker Action
+author: Chris de Graaf
+description: Verify that a future Action's Docker image is what you expect it to be
+inputs:
+  image:
+    description: 'Docker image to verify (e.g. foo/bar:1.2.3)'
+    required: true
+  digest:
+    description: 'Expected image digest (e.g. sha256:abcdef)'
+    required: true
+runs:
+  using: node12
+  main: verify.js
+branding:
+  icon: lock
+  color: red
