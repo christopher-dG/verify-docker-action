@@ -13,7 +13,7 @@ exports.main = async () => {
       stdout: buf => {
         output = buf.toString().trim();
       },
-    }
+    },
   });
 
   if (output === digest) {
